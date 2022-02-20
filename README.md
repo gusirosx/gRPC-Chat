@@ -1,23 +1,15 @@
-# gRPC Guide
-Based on this [tutorial](https://www.youtube.com/watch?v=BdzYdN_Zd9Q)
+# gRPC Chat
 
 ## How to run this example
 
-1. run the grpc server
+1. run grpc server
 
-```sh
-$ go run server/server.go
-```
-or
 ```sh
 $ make run_server
 ```
-2. run the client
 
-```sh
-$ go run client/client.go
-```
-or
+2. run gin client
+
 ```sh
 $ make run_client
 ```
@@ -28,3 +20,5 @@ $ make run_client
 
 ```sh
 $ make generate
+
+Based on this [tutorial](https://www.youtube.com/watch?v=BdzYdN_Zd9Q)

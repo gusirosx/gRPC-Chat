@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "gRPC-Guide/proto"
+	pb "gRPC-Chat/proto"
 	"log"
 
 	"golang.org/x/net/context"

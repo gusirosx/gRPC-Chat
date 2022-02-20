@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-option go_package = "/gRPC-Guide;gRPC_Guide";
+option go_package = "/gRPC-Chat;gRPC_Chat";
 
 package proto;
 
-message Message{
-    string body = 1;
-}
-
+// The chat service definition.
 service ChatService{
     rpc SayHello (Message) returns (Message);
+}
+
+// The request message containing the message.
+message Message{
+    string body = 1;
 }

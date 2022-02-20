@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	pb "gRPC-Guide/proto"
+	pb "gRPC-Chat/proto"
 	"log"
 	"net"
 
