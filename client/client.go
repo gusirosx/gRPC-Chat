@@ -5,15 +5,13 @@ import (
 	"log"
 
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 )
 
 func main() {
-
-	//var conn *grpc.ClientConn
-	conn, err := grpc.Dial("localhost:9000", grpc.WithInsecure(), grpc.WithBlock())
+	// Set up a connection to the server.
+	conn, err := Connection()
 	if err != nil {
-		log.Fatalf("did not connect: %s", err)
+		log.Printf("failed to dial server %s: %v", *serverAddr, err)
 	}
 	defer conn.Close()
 
@@ -24,5 +22,4 @@ func main() {
 		log.Fatalf("Error when calling SayHello: %s", err)
 	}
 	log.Printf("Response from server: %s", response.Body)
-
 }
