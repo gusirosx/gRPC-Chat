@@ -20,5 +20,5 @@ $ make run_client
 
 ```sh
 $ make generate
-
+```
 Based on this [tutorial](https://www.youtube.com/watch?v=BdzYdN_Zd9Q)
